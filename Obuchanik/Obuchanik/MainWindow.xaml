@@ -15,20 +15,39 @@
         </Grid.ColumnDefinitions>
 
         <Border CornerRadius="10" Background="#F4FCC4" Margin="10" Grid.Column="0">
-            <StackPanel>
-                <Button Content="Кнопка" Background="#DFEE84" Width="130" Height="40" Grid.Column="0" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                    
+                <StackPanel>
+                    <Button Content="Тест 1" Background="#DFEE84" Width="130" Height="40" Grid.Column="0" Margin="5" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="10" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+
+                <Button Grid.Row="1" Height="40" Width="40" Margin="80 0 0 0">
+                    <Image Source="/plus.png"></Image>
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="10" Background="{TemplateBinding Background}">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border CornerRadius="15" Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/> 
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-            </StackPanel>
+            </Grid>
         </Border>
 
         <Border CornerRadius="10" Background="#F4FCC4" Margin="10" Grid.Column="2">
+            
         </Border>
 
     </Grid>
