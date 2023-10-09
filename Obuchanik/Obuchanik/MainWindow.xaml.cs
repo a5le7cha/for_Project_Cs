@@ -24,5 +24,15 @@ namespace Obuchanik
         {
             InitializeComponent();
         }
+
+        //надо сделать, чтоб кнопки добавлялись в коде и имели общий дезайн
+        //сделать общие настройки 
+        private void Btn_clic_plus(object sender, RoutedEventArgs e)
+        {
+
+            Button btn1 = new Button();
+            btn1.Content = "Test1";
+            StPnTests.Children.Add(btn1);
+        }
     }
 }
