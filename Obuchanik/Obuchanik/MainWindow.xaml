@@ -22,6 +22,7 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel x:Name="StPnTests"></StackPanel>
+<<<<<<< HEAD
 
                 <Button Grid.Row="1" Height="40" Width="40" Background="#F4FCC4" Margin="87,5.2,10,4.4" Click="Btn_clic_plus">
                     <Image Source="/plus.png"></Image>
@@ -32,6 +33,13 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
+=======
+                    
+                <Button Grid.Row="1" Height="40" Margin="87,5.2,10,4.4" Click="Btn_clic_plus">
+                    <Button.Background>
+                        <ImageBrush ImageSource="plusick.png"/>
+                    </Button.Background>
+>>>>>>> e8a8d4d9881c422c215a8b3b087e850373989abd
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="13"/>
