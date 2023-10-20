@@ -24,5 +24,12 @@ namespace Obuchanik
         {
             InitializeComponent();
         }
+
+        private void Btn_clic_plus(object sender, RoutedEventArgs e)
+        {
+            Button btnAddNewTest = new Button();
+            btnAddNewTest.Content = "Новый тест";
+            StPnTests.Children.Add(btnAddNewTest);
+        }
     }
 }
